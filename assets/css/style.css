@@ -2,6 +2,7 @@
 
 html {
 	box-sizing: border-box;
+    
 }
  
 * {
@@ -10,14 +11,14 @@ html {
 
 body {
     margin: auto;
-    width: 1920px;
+    max-width: 1920px;
     
 }
 
 
 #mainWrapper{
 	
-	width: 1420px;
+	max-width: 1420px;
     height: 150px;
 	margin: auto;
     
@@ -295,7 +296,7 @@ url('../img/gallery/galeria-4.jpg');
 
 
 #uvod{
-    width: 1920px;
+    max-width: 1920px;
     padding-top: 100px;
     padding-left: 350px;
     padding-right: 1000px;
@@ -314,12 +315,10 @@ url('../img/gallery/galeria-4.jpg');
 
 
 #ktosme{
-    
     display: flex;
     padding-right: 500px;
     align-items: center;
-    justify-content: center;
-    width: 1920px;
+    max-width: 1920px;
     height: 800px;
 }
 
@@ -348,7 +347,6 @@ url('../img/gallery/galeria-4.jpg');
 }
 
 .containerrr {
-	
 	margin-left: 200px;
     display: flex;
     align-items: center;
@@ -404,7 +402,7 @@ url('../img/gallery/galeria-4.jpg');
 	margin: auto;
     padding-left: 250px;
     padding-right: 250px;
-    width: 1920px;
+    max-width: 1920px;
     height: 520px;
 }
 
@@ -704,7 +702,7 @@ cursor: pointer;
     padding-left: 250px;
     padding-right: 250px;
     padding-top: 120px;
-    width: 1920px;
+    max-width: 1920px;
     height: 800px;
 }
 
@@ -761,7 +759,7 @@ cursor: pointer;
 	background-color: #f9e8eb;
     padding-left: 350px;
     padding-right: 250px;
-    width: 1920px;
+    max-width: 1920px;
     height: 800px;
 }
 
@@ -823,7 +821,7 @@ footer{
 	background-color: #ffffff;
 	color: #476667;
     padding: 14px;
-    width: 1920px;
+    max-width: 1920px;
     height: 50px;
 }
 
@@ -841,54 +839,64 @@ footer{
 @media screen and ( max-width: 1800px ) {
 
     body {
-    width: 100%;
+    max-width: 100%;
     }
     #uvod {
-    width: 100%;
+    max-width: 100%;
     padding-left: 100px;
     }
     #galeria {
     padding-left: 100px;
     padding-right: 100px;
-    width: 100%;
+    max-width: 100%;
+    }
+    .galerie {
+    margin-left: 100px;
+    }
+    .carousel {
+    max-width: 1580px;
+    }
+    .carousel__control {
+    margin-left: 700px;
     }
     #referencie {
-    width: 100%;
+    max-width: 100%;
     padding-left: 100px;
     padding-right: 100px;
     }
     .containerrr {
-	margin-left: 0px;
+	margin-left: 0;
     padding-right: 100px;
     }
     #contact {
     padding-left: 100px;
     padding-right: 100px;
-    width: 100%;
+    max-width: 100%;
     }
     footer {
-    width: 100%;
+    max-width: 100%;
     }
        
 }
 
 @media screen and ( max-width: 1700px ) {
-    .galerie {
-    margin-left: 0;
+    
+    .carousel {
+    width: 1460px;
     }
     
-}
-
 @media screen and ( max-width: 1580px ) {
 
     #mainWrapper {
     width: 100%;
-        margin-left: 5%;
+    margin-left: 5%;
     }
     .post-header {
     clip-path: none;
     }
-   
+    .carousel {
+    max-width: 1370px;
+    }
     .navigation {
 	float: left;
     margin-left: 20%;
@@ -899,14 +907,15 @@ footer{
 
 }
 
-@media screen and ( max-width: 1500px ) {
+@media screen and ( max-width: 1515px ) {
 
+    
     .kto {
     margin-left: 0;
     margin-right: 100px;
     }
-    .carousel__control {
-    margin-left: 700px;
+    .carousel {
+    max-width: 1270px;
     }
     
 }
@@ -923,12 +932,18 @@ footer{
     .kto {
     margin-right: 200px;
     }
+    .carousel {
+    max-width: 1100px;
+    }
 }
 
 @media screen and ( max-width: 1250px ) {
 
     .kto {
     margin-right: 300px;
+    }
+    .carousel {
+    max-width: 1050px;
     }
 
 }
@@ -946,14 +961,16 @@ footer{
     }
     .right{
     background: none;
-    width: 0px;
-    height: 0px;
+    width: 0;
+    height: 0;
     }
-    
     .pattern{
     background: none;
     width: 0;
     height: 0;
+    }
+    .carousel {
+    max-width: 1000px;
     }
     
 }
@@ -962,6 +979,9 @@ footer{
  
     .kto {
     margin-right: 400px;
+    }
+    .carousel {
+    max-width: 900px;
     }
     
 }
@@ -980,30 +1000,14 @@ footer{
     #myImg {
     height: 270px;
     }
-    .carousel {
-    min-width: 100px;
-    max-width: 900px;
-    padding-left: 0;
-    padding-right: 0;
-    }
-    .carousel__activator:nth-of-type(n):checked ~ .carousel__controls:nth-of-type(n) {
-    display: none;
-    }
-    .carousel__activator:nth-of-type(n):checked ~ .carousel__screen .carousel__track {
-    -webkit-transform: none;
-            transform: none;
-    }
-
-    .carousel__screen {
-    margin-left: 0;
-    margin-right: 0;
-    }
 
     .carousel__track {
+    max-width: 800px;
     overflow-x: auto;
     width: auto;
-    padding-left: 48px;
-    padding-right: 48px;
+    }
+    .carousel__control {
+    background: none;
     }
 
     .one{
@@ -1072,12 +1076,22 @@ footer{
     
     
 }
+
+@media screen and (max-width: 920px) {
     
+    .carousel__track {
+    max-width: 730px;
+    }
+
+}
     
 @media screen and (max-width: 850px) {
     
     #uvod {
     padding-right: 400px;
+    }
+    .carousel__track {
+    max-width: 680px;
     }
 
 }
@@ -1090,23 +1104,23 @@ footer{
     }
 
     #logo{
-    width: 0px;
-    height: 0px;
+    width: 0;
+    height: 0;
     }
     
     .one{
-    width: 0px;
-    height: 0px;
+    width: 0;
+    height: 0;
     }
 
     .two{
-    width: 0px;
-    height: 0px;
+    width: 0;
+    height: 0;
     }
 
     .three{
-    width: 0px;
-    height: 0px;
+    width: 0;
+    height: 0;
     }
     
     #referencie {
@@ -1116,8 +1130,8 @@ footer{
     }
     
     .left {
-    width: 0px;
-    height: 0px;
+    width: 0;
+    height: 0;
     background: none;
     }
     
@@ -1129,6 +1143,12 @@ footer{
     #contact {
     padding-left: 10px;
     padding-right: 10px;
+    }
+    .galerie {
+    margin-left: 50px;
+    }
+    .carousel__track {
+    max-width: 650px;
     }
     
 }
@@ -1144,8 +1164,15 @@ footer{
     }
     
     .logoo{
-    width: 0px;
-    height: 0px;
+    background: none;
+    width: 0;
+    height: 0;
+    }
+    .galerie {
+    margin-left: 20px;
+    }
+    .carousel__track {
+    max-width: 590px;
     }
     
 }
@@ -1154,6 +1181,9 @@ footer{
  
     .kto {
     margin-right: 900px;
+    }
+    .carousel__track {
+    max-width: 520px;
     }
 
 }
@@ -1184,6 +1214,10 @@ footer{
     .ref tr.ren td {
     padding-left: 5px;
     padding-right: 5px;
+    }
+    
+    .carousel__track {
+    max-width: 450px;
     }
     
 }
