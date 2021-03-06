@@ -939,11 +939,8 @@ footer{
     .carousel {
     max-width: 1050px;
     }
-    .navigation {
-    float: none;
-    }
     .navigation a {
-    padding-top: 3.5em;
+    padding-top: 2.5em;
     padding-left: 0.1em;
     padding-right: 0.1em;
     width: 5em;
@@ -1049,9 +1046,6 @@ footer{
     font-size: 14px;
     letter-spacing: 0px;
     }
-    .navigation a {
-    padding-top: 3em;
-    }
     .btn {
     padding: 12px 18px;
     }
@@ -1106,6 +1100,11 @@ footer{
     .carousel {
     max-width: 680px;
     }
+    .navigation {
+    float: none;
+    }
+    .navigation a {
+    padding-top: 2.7em;
 
 }
 
