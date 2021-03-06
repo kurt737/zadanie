@@ -394,7 +394,7 @@
                     <br>
                     <div>
                         <label for="text"><h7>Správa *</h7></label><br>
-                        <textarea id="message" name="message" rows="7" cols="77"></textarea> <br><br>
+                        <textarea id="message" name="message" rows="7" cols="50"></textarea> <br><br>
                         <button class="btn kont">Odoslať</button> 
                     </div>
                     

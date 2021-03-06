@@ -18,7 +18,7 @@ body {
 
 #mainWrapper{
 	
-	max-width: 1420px;
+	max-width: 73.9583%; /* 1420 / 1920 */
     height: 150px;
 	margin: auto;
     
@@ -134,7 +134,6 @@ a {
 
 
 .btn {
-	
 	font-weight: bold;
 	border: none;
 	border-radius: 30px;
@@ -142,7 +141,6 @@ a {
 	padding: 0.625em 0;
 	margin: 1.7em 0;
     padding: 17px 38px;
-    
 }
 
 .refer {
@@ -296,10 +294,10 @@ url('../img/gallery/galeria-4.jpg');
 
 
 #uvod{
-    max-width: 1920px;
+    max-width: 100%;
     padding-top: 100px;
-    padding-left: 350px;
-    padding-right: 1000px;
+    padding-left: 18.22916%; /* 350/1920 */
+    padding-right: 52.08333%; /* 1000/1920 */
 }
 
 
@@ -315,10 +313,10 @@ url('../img/gallery/galeria-4.jpg');
 
 
 #ktosme{
+    max-width: 100%;
     display: flex;
-    padding-right: 500px;
+    padding-right: 26.04166%; /* 500/1920 */
     align-items: center;
-    max-width: 1920px;
     height: 800px;
 }
 
@@ -399,17 +397,17 @@ url('../img/gallery/galeria-4.jpg');
 
 
 #galeria{
+    max-width: 100%;
 	margin: auto;
-    padding-left: 250px;
-    padding-right: 250px;
-    max-width: 1920px;
+    padding-left: 13.02083%; /* 250/1920 */
+    padding-right: 13.02083%; /* 250/1920 */
     height: 520px;
 }
 
 .galerie {
     float: left;
-    margin-left: 250px;
-    margin-top: -400px;
+    margin-left: 13.02083%; /* 250/1920 */
+    margin-top: -20.83333%; /* -400/1920 */
     
 }
 
@@ -420,8 +418,8 @@ url('../img/gallery/galeria-4.jpg');
 
 
 .carousel {
-  min-width: 900px;
-  max-width: 1650px;
+  
+  max-width: 1650px; /* 1650/1920 */
   margin:auto;
     position: relative;
 }
@@ -437,7 +435,7 @@ url('../img/gallery/galeria-4.jpg');
 
 .carousel__control {
 
-margin-left: 1300px;
+margin-left: 78.78%; /* 1300 */
 cursor: pointer;
   background: url(../img/arrow.svg) no-repeat;
   height: 100px;
@@ -574,7 +572,7 @@ cursor: pointer;
 
 .carousel__item {
   display: inline-flex;
-  padding-right: 15px;
+  padding-right: 0.909%; /* 15 */
 
 }
 
@@ -697,12 +695,12 @@ cursor: pointer;
 
 
 #referencie{
+    max-width: 100%;
 	margin: auto;
 	background-color: #476667;
-    padding-left: 250px;
-    padding-right: 250px;
+    padding-left: 13.02083%; /* 250/1920 */
+    padding-right: 13.02083%; /* 250/1920 */
     padding-top: 120px;
-    max-width: 1920px;
     height: 800px;
 }
 
@@ -727,7 +725,7 @@ cursor: pointer;
 
 .kto {    
     color: #476667;
-    margin-left: 100px;
+    margin-left: 5.20833%; /* 100/1920 */
 }
 .kto th.sme { 
     padding: 20px;
@@ -755,11 +753,11 @@ cursor: pointer;
 }
 
 #contact{
+    max-width: 100%;
 	margin: auto;
 	background-color: #f9e8eb;
-    padding-left: 350px;
-    padding-right: 250px;
-    max-width: 1920px;
+    padding-left: 18.22916%; /* 350/1920 */
+    padding-right: 13.02083%; /* 250/1920 */
     height: 800px;
 }
 
@@ -817,11 +815,11 @@ form div {
 /* FOOTER */
 
 footer{
+    max-width: 100%;
 	text-align: center;
 	background-color: #ffffff;
 	color: #476667;
-    padding: 14px;
-    max-width: 1920px;
+    padding: 0.72916%; /* 14/1920 */
     height: 50px;
 }
 
@@ -835,6 +833,12 @@ footer{
 
 /* MEDIA QUERIES */
 
+@media screen and ( max-width: 1915px ) {
+    .galerie {
+    margin-left: 5.20833%; /* 100/1920 */
+    }
+    
+}
 
 @media screen and ( max-width: 1800px ) {
 
@@ -842,38 +846,32 @@ footer{
     max-width: 100%;
     }
     #uvod {
-    max-width: 100%;
-    padding-left: 100px;
+    padding-left: 5.20833%; /* 100/1920 */
     }
     #galeria {
-    padding-left: 100px;
-    padding-right: 100px;
-    max-width: 100%;
+    padding-left: 5.20833%; /* 100/1920 */
+    padding-right: 5.20833%; /* 100/1920 */
     }
     .galerie {
-    margin-left: 100px;
+    margin-left: 5.20833%; /* 100/1920 */
     }
     .carousel {
-    max-width: 1580px;
+    max-width: 1580px; 
     }
     .carousel__control {
     margin-left: 700px;
     }
     #referencie {
-    max-width: 100%;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 5.20833%; /* 100/1920 */
+    padding-right: 5.20833%; /* 100/1920 */
     }
     .containerrr {
 	margin-left: 0;
-    padding-right: 100px;
+    padding-right: 5.20833%; /* 100/1920 */
     }
     #contact {
-    padding-left: 100px;
-    padding-right: 100px;
-    max-width: 100%;
-    }
-    footer {
+    padding-left: 5.20833%; /* 100/1920 */
+    padding-right: 5.20833%; /* 100/1920 */
     max-width: 100%;
     }
        
@@ -885,21 +883,18 @@ footer{
     width: 1460px;
     }
     
+}
+
 @media screen and ( max-width: 1580px ) {
 
     #mainWrapper {
     width: 100%;
-    margin-left: 5%;
     }
     .post-header {
     clip-path: none;
     }
     .carousel {
     max-width: 1370px;
-    }
-    .navigation {
-	float: left;
-    margin-left: 20%;
     }
     .one {
     margin-left: 700px;
@@ -909,65 +904,66 @@ footer{
 
 @media screen and ( max-width: 1515px ) {
 
-    
     .kto {
-    margin-left: 0;
-    margin-right: 100px;
+    margin-left: 5%;
+    margin-right: 5%; /* 100/1920 */
     }
     .carousel {
     max-width: 1270px;
     }
+    #galeria {
+    height: 420px;
+    }
+    .kto th.sme { 
+    padding: 0;
+    }
+    .kto tr.sme td { 
+    padding: 0;
+    }
+    #ktosme {
+    padding-right: 0;
+    }
     
 }
-
 
 @media screen and ( max-width: 1400px ) {
 
     .one {
-    margin-left: 600px;
-    }
-    #uvod {
-    padding-left: 50px;
-    }
-    .kto {
-    margin-right: 200px;
+    margin-left: 50%;
     }
     .carousel {
     max-width: 1100px;
     }
+    
 }
 
 @media screen and ( max-width: 1250px ) {
 
-    .kto {
-    margin-right: 300px;
-    }
     .carousel {
     max-width: 1050px;
+    }
+    .navigation {
+    float: none;
+    }
+    .navigation a {
+    padding-top: 3.5em;
+    padding-left: 0.1em;
+    padding-right: 0.1em;
+    width: 5em;
+    }
+    #galeria {
+    height: 350px;
     }
 
 }
 
 @media screen and ( max-width: 1200px ) {
 
-    .navigation {
-    margin-left: 10%;
-    }
-    .one {
-    margin-left: 500px;
-    }
-    .kto {
-    margin-left: 100px;
-    }
     .right{
-    background: none;
-    width: 0;
-    height: 0;
+    display: none;
     }
     .pattern{
-    background: none;
-    width: 0;
-    height: 0;
+    display: none;
     }
     .carousel {
     max-width: 1000px;
@@ -976,71 +972,61 @@ footer{
 }
 
 @media screen and ( max-width: 1150px ) {
- 
-    .kto {
-    margin-right: 400px;
-    }
+    
     .carousel {
     max-width: 900px;
     }
     
 }
 
-@media screen and ( max-width: 1050px ) {
- 
-    .navigation {
-    margin-left: 0%;
-    }
-}
-
-
-
 @media screen and (max-width: 1023px) {
 
     #myImg {
     height: 270px;
     }
-
-    .carousel__track {
+    .carousel {
     max-width: 800px;
+    }
+    .carousel__track {
     overflow-x: auto;
     width: auto;
     }
     .carousel__control {
-    background: none;
+    display: none;
     }
-
+    .homepage .post-header {
+	height: 700px;
+    }
     .one{
     width: 150px;
     height: 225px;
-    margin-top: -1000px;
+    margin-top: -500px;
     }
-
     .two{
     width: 172px;
     height: 115px;
     margin-left: 10px;
-    margin-top: -800px;
+    margin-top: -300px;
     }
-
     .three{
     width: 112px;
     height: 168px;
     margin-left: -170px;
-    margin-top: -1100px;
+    margin-top: -600px;
     }
-
     .navigation a, .btn, h2, h4, h7, p9, p5 {
     font-size: 14px;
     letter-spacing: 0px;
     }
-
-
+    .navigation a {
+    padding-top: 3em;
+    }
+    .btn {
+    padding: 12px 18px;
+    }
     p1, p3, p6, p7 {
     font-size: 30px;
     }
-    
-
     #logo {
     width: 250px;
     height: 60px;
@@ -1048,38 +1034,34 @@ footer{
     .logo {
     margin-top: 20px;
     }
-    
     #mainWrapper {
     height: 100px;
     }
-
     .navigation {
     margin-top: 5px;
     }
-    
     #uvod {
-    padding-right: 450px;
+    padding-right: none;
     }
-    
     .left {
     width: 300px;
     height: 500px;
     }
-    
     .containerr {
     margin-top: 100px;
     }
-    
-    .kto {
-    margin-right: 600px;
+    #galeria {
+    height: 300px;
     }
-    
+    #ktosme{
+    height: 600px;
+    }
     
 }
 
 @media screen and (max-width: 920px) {
     
-    .carousel__track {
+    .carousel {
     max-width: 730px;
     }
 
@@ -1087,91 +1069,63 @@ footer{
     
 @media screen and (max-width: 850px) {
     
-    #uvod {
-    padding-right: 400px;
+    #logo{
+    display: none;
     }
-    .carousel__track {
+    .carousel {
     max-width: 680px;
     }
 
 }
 
-
 @media screen and (max-width: 800px) {
     
     #uvod {
-    padding-right: 50px;
+    padding-right: 2.60416%; /* 50/1920 */
     }
-
-    #logo{
-    width: 0;
-    height: 0;
-    }
-    
     .one{
-    width: 0;
-    height: 0;
+    display: none;
     }
-
     .two{
-    width: 0;
-    height: 0;
+    display: none;
     }
-
     .three{
-    width: 0;
-    height: 0;
+    display: none;
     }
-    
     #referencie {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 0px;
+    padding-left: .520833%; /* 10/1920 */
+    padding-right: .520833%; /* 10/1920 */
+    padding-top: 0;
     }
-    
     .left {
-    width: 0;
-    height: 0;
-    background: none;
+    display: none;
     }
-    
-    .kto {
-    margin-left: 0px;
-    margin-right: 700px;
-    }
-    
     #contact {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 4%;
+    padding-right: 4%;
     }
     .galerie {
-    margin-left: 50px;
+    margin-left: 2.60416%; /* 50/1920 */
+    margin-top: -30%;
     }
-    .carousel__track {
+    #galeria {
+    height: 350px;
+    }
+    .carousel {
     max-width: 650px;
+    }
+    #ktosme{
+    height: 500px;
     }
     
 }
 
 @media screen and (max-width: 730px) {
- 
-    .kto {
-    margin-right: 800px;
-    }
-    
-    .contact textarea {
-	width: 22em;
-    }
     
     .logoo{
-    background: none;
-    width: 0;
-    height: 0;
+    display: none;
     }
-    .galerie {
-    margin-left: 20px;
-    }
-    .carousel__track {
+    .carousel {
     max-width: 590px;
     }
     
@@ -1179,45 +1133,46 @@ footer{
 
 @media screen and (max-width: 630px) {
  
-    .kto {
-    margin-right: 900px;
-    }
-    .carousel__track {
+    .carousel {
     max-width: 520px;
+    }
+    .ref tr.ren td {
+    padding-left: 1%;
+    padding-right: 1%;
+    }
+    .galerie {
+    margin-top: -50%;
+    }
+    #galeria {
+    height: 400px;
     }
 
 }
 
 @media screen and (max-width: 560px) {
-    
-    #mainWrapper {
-    margin-left: 0;
-    }
-    
-    p5 {
-    font-size: 11px;
-    }
-    
-    .kto {
-    margin-right: 970px;
-    margin-left: -10px;
-    }
-    
-    .navigation a {
-    width: 6em;
-    }
-    
-    #referencie {
-    padding-left: 0px;
-    }
-    
-    .ref tr.ren td {
-    padding-left: 5px;
-    padding-right: 5px;
-    }
-    
-    .carousel__track {
+        
+    .carousel {
     max-width: 450px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    
+    .carousel {
+    max-width: 400px;
+    }
+    #mainWrapper {
+    max-width: 100%;
+    }
+    .navigation {
+    margin-left: 7%;
+    }
+    .galerie {
+    margin-top: -60%;
+    }
+    p5 {
+    font-size: 12px;
     }
     
 }
